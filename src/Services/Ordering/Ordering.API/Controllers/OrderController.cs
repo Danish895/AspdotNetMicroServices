@@ -58,7 +58,6 @@ namespace Ordering.API.Controllers
         {
             var command = new DeleteOrderCommand() { Id = id };
             await _mediator.Send(command);
-
             return NoContent();
         }
 
